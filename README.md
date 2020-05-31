@@ -93,7 +93,7 @@ castorCTF{1stiswhatyowant}
 
 **QUESTION**
 
-```
+```python
 def checkpass():
     _input = input("Enter the password: ").encode()
     if _input[0:4].hex() == "63617374":
@@ -124,7 +124,7 @@ main()
 
 It can be easily seen that the flag is the password.just we have to convert the given hex data to ASCII which can be easily done by a python script.
 
-```
+```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -149,7 +149,7 @@ Yeah...okay. You got it!
 
 **QUESTION**
 
-```
+```python
 import base64
 
 def xor(s1,s2):
@@ -191,7 +191,7 @@ y = x ^ a
 ```
 so the reverse of the xor function is so much easy
 
-```
+```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -216,7 +216,7 @@ print(flag.decode('utf-8'))
 
 ```
 
-```
+```bash
 root@kali:~# ./vault1.py
 castorsCTF{r1cK_D1e_R1cKp3aT_x0r}
 root@kali:~# python3 chal.py
@@ -229,7 +229,7 @@ Yeah...okay. You got it!
 #### ARITHMETICS
 
 **QUESTION**
-```
+```bash
 server:  nc chals20.cybercastors.com 14429
 
 ------------------Welcome to Beginner Arithmetics!------------------
@@ -252,7 +252,7 @@ Wrong answer! The correct answer was -5
 
 **FLAG** : castorsCTF(n00b_pyth0n_4r17hm3t1c5}
 
-```
+```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 

@@ -27,7 +27,7 @@ It was an easy peasy as the name suggest something on the readme page but flag w
 
 ![](img/chal.gif)
 
-This was the given gif and some randoms numbers  are appearing on it but they are fast in order to get all numbers so the numbers I used ![ezgif](https://ezgif.com/repair) to split the frames which gives all the numbers.
+This was the given gif and some randoms numbers  are appearing on it but they are fast in order to get all numbers so the numbers I used [ezgif](https://ezgif.com/repair) to split the frames which gives all the numbers.
 
 ![](img/w4.png)
 

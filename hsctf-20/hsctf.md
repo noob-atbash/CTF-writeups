@@ -26,9 +26,9 @@ The challenge was quite easy we have to login and credentials were available in 
 
 ---
 
-##CRYPTOGRAPHY
+## CRYPTOGRAPHY
 
-###XORead
+### XORead
 
 Given Ques:
 
@@ -245,7 +245,7 @@ Just by using the **exiftool** as question flag was in meta-data I get the flag
 
 I didn't care much about what it really was I used some tool after that I Just upload the image [here](http://stylesuxx.github.io/steganography/) and let this tool do the job and I get the flag
 
-![](img/u.png)
+![](img/mad.png)
 
 
 #### COMMENTS
@@ -258,7 +258,7 @@ In this question a zip file was given after unzipping we got new zip file at fir
 
 ## MISC
 
-###PRIMES
+### PRIMES
 A text file was given which has only a string written:
 
 ```
@@ -396,7 +396,7 @@ public class ComputerSciencePrinciples
 ```
 ![](/img/rev1_1.png)
 
-### AP Lab: English Language**
+### AP Lab: English Language
 
 Again .java file was given .
 
@@ -504,7 +504,7 @@ print("flag{%d}"%val)
 ```
 ![](/img/algo1_2.png)
 
-**QUESTION : Pythagorean Tree Fractal 2**
+**QUESTION : Pythagorean Tree Fractal 2
 
 ![](/img/algo2_1.png)
 
@@ -513,7 +513,7 @@ print("flag{%d}"%val)
 Now, the area is:
 
 ```
-(area/1)*1 + (area/2)*2 + ... upto 25 terms\
+(area/1)*1 + (area/2)*2 + ... upto 25 terms
 basically it is area = 70368744177664 multiplied by 25
 
 ```

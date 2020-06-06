@@ -487,9 +487,9 @@ public class EnglishLanguage
 
 ## ALGORITHMS
 
-###Pythagorean Tree Fractal 1
+### Pythagorean Tree Fractal 1
 
-![](/img/algo1_1.png)
+![](img/algo1_1.png)
 
 **flag{1125899906842623}**
 

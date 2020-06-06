@@ -536,7 +536,7 @@ print("flag{%d}"%total_area)
 print("flag{%d}"%(70368744177664*25))
 
 ```
-![](/img/algo2_2.png)
+![](img/algo2_2.png)
 
 
 

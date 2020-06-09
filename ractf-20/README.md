@@ -116,7 +116,7 @@ but the zip data was encrypted ,I  extracted it through 7z x.
 root@kali:~#7z x OwO.png
 
 ```
-and used the password **Shad0w** and i received flag.png
+and used the password **Shad0ws** and i received flag.png
 
 ![](images/flag.png)
 

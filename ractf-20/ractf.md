@@ -127,7 +127,7 @@ A PNG file was given which was not opening so I first checked it's magic bytes e
 **ractf{1m4ge_t4mp3r1ng_ftw}**
 
 
-##CRYPTO
+## CRYPTO
 
 ### REALLY SIMPLE ALGORITHM
 
@@ -238,4 +238,4 @@ rocco ive transfer ed the first part of the funds to your account but im going t
 ```
 >hint was given: The flag is the location of the bank
 
-**flag: ractf{zurich}
+**flag: ractf{zurich}**

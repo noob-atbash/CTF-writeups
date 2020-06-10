@@ -7,7 +7,7 @@ We actively participate in CTFs. These are security competitions which require p
 ## Team :  NOOB-ATBASH
 
 
-| ![](./noobctf-20/img/error.jpg) | ![](./noobctf-20/img/kaki.jpeg) |
+| ![](./noobctf-20/img/error.jpg) | ![](./noobctf-20/img/kaki1.jpg) |
 | ------------- | ------------- |
 |   [ЕЯЯОЯ](https://github.com/Error-200)       |  [kaki-epithesi](https://github.com/kaki-epithesi)|
 

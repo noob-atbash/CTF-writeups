@@ -150,7 +150,7 @@ c = 8776057555426699101543111092257626153215937671876570174951376666623918901210
 I used [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool) to solve this or either you can use some techniques get p and q and write a python script to solve the problem (which I used above and will be using in further problem )
 
 
-![](img/olala.png)
+![](img/olalal.png)
 
 ## DECEMBER
 

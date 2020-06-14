@@ -11,7 +11,7 @@ I simply used grep -a command to search flag in the vortex .
 
 ![](img/vrtx.png)
 
-## FAKE FILES  
+## FAKE-FILES  
 
 ![](img/ff.png)
 

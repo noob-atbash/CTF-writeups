@@ -1,4 +1,4 @@
-#OSINT
+# OSINT
 
 ## TIME KEEPER
 
@@ -13,7 +13,7 @@ After open the url we got the flag .
 ![](img/tk2.png)
 
 
-### FINSTA
+## FINSTA
 
 nahamcontron sa name was given.
 

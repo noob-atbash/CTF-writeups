@@ -17,6 +17,12 @@ So I used john the reaper to brute force the password.
 
 ![](img/ek.png)
 
+> password : monkeys
+
+Once you  get the password you can open the file from any app I used an android app named **keepass**
+
+![](img/k.jpeg)
+
 ## PETER RABBIT
 
 This was question was a unique one we were given this image :

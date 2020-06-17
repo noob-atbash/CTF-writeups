@@ -138,7 +138,9 @@ We can now write:
 ![](img/3.gif)
 
 Thus we can get the following by solving using Chinese Remainder Theorem:
+
 ![](img/4.gif)
+
 where bi = N/Ni, bi' = bi-1 mod Ni and N = N1* N2* N3. Since we know that M < Ni (If our message M is larger than the modulus N, then we won't get the exact message when we decrypt the ciphertext, we will get an equivalent message instead, which is not favourable).
 Therefore we can write M < N1N2N3. We can easily calculate M now by directly taking the cube root of M3 to get M
 

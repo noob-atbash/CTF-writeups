@@ -1,8 +1,8 @@
-## FOREINSICS
+# FOREINSICS
 
-### KatyCat
+## KatyCat
 
-![](img/kat.png)
+![](img/Kat.png)
 
 **zh3r0{1sn7_st3g4n0_e4sy}**
 
@@ -27,27 +27,31 @@ At first it was difficult to guess so I began with **base64** decoding
 
 ![](img/c1.png)
 
-As we can see the first letter **PK** which are the starting magic bytes of **zip** file so we need to make enocde the data in zip file save it as zip file you can use any hexeditor for this job but [cyberchef](https://gchq.github.io/CyberChef/) can do the same job for us so
+As we can see the first letter **PK** which are the starting magic bytes of **zip** file so we need to enocde the data in zip file save it as zip  you can use any hexeditor for this job but [cyberchef](https://gchq.github.io/CyberChef/) can do the same job for us so
 
 ![](img/c2.png)
 
-Once we get the zip file when I tried to open it, it was password protected ao we can use **john** to crack the password and it was very easy :
+Once we get the zip file when I tried to open it, it was password protected so I used **john** to crack the password and it was very easy :
 
-![](img/k2.png)
+
 
 > password : kitkat
 
+![](img/k2.png)
+
 Once we unlock the zip file and open the flag.txt  we found this :
 
+```
+K9bC_L`D?f0DEb8c?_06cDJN
 
-![](img/k2.png)
+```
 
 
 A **rot47** cipher easy to crack :
 
 ![](img/rot.png)
 
-### LSB Fun
+## LSB Fun
 
 ![](img/l.png)
 
@@ -59,10 +63,10 @@ When we download the zip file and unzip we found this image :
 
 As the challenge description suggest its **jpg** LSB Stego ques so I began with tool [jsteg](https://github.com/lukechampine/jsteg), and at one shot I found the flag :
 
-![](img/rot.png)
+![](img/lsb.png)
 
 
-### Snow
+## Snow
 ![](img/sn.png)
 
 We were given a zip file after unziping we found a normal txt file name **chall.txt** and there some fake files with flags there was also a txt file name **secret.txt** after opening it we found
@@ -76,7 +80,7 @@ This also seems to be normal so once again going the challenge name I found it w
 
 ![](img/snow.png)
 
-### is it a Troll
+## is it a Troll
 
 ![](img/tr.png)
 
@@ -108,14 +112,15 @@ Since there is no flag I run the **zsteg** and again I found a encoded text :
 
 It was **base64** encoded after decoding it we get the flag :
 
-![](img/t4.png)
+![](img/t5.png)
 
-### Hashtad
+## Hashtad
 
-When we connect to this **nc crypto.zh3r0.ml 7419** we get the a value for N and ct but it is different each time also mentioned in the question description
+When we connect to this **nc crypto.zh3r0.ml 7419** we get the a value for N and ct but it is different each time also mentioned in the question description so first understand : 
 
+![](img/h1.png)
 
-Actually from challenge name it's behavior It indicates it's [Hastad's Broadcast Attack](https://en.wikipedia.org/wiki/Coppersmith%27s_attack#H%C3%A5stad's_broadcast_attack) if you need a brief description you can also see this [video](https://www.youtube.com/watch?v=aS57JCzJw_o).
+### HAstad's broadcast attack
 
 Suppose Alice sends an unpadded message M to k people P1, P2, ..., Pk each using a same small public key exponent e and different moduli N for ith individual, the public key for ith individual (Ni, e). The attack states that as soon as k >= e, the message M is no longer secure and we can recover it easily using [Chinese Remainder Theorem](https://crypto.stanford.edu/pbc/notes/numbertheory/crt.html).
 
@@ -198,20 +203,20 @@ print "flag: ",hex(flag)[2:-1].decode("hex")
 
 Since no value for **e** was given so at first I tried with **e=3**
 
-![](img/h1.png)
+
 
 but it didn't worked so I set it to **e=5**
 
 ![](img/h2.png)
 
 
-## Subset of subset of hacking machines challenges
+# Subset of subset of hacking machines challenges
 
 Only This url was given : **hackit.zh3r0.ml** in almost all the problem in this section
 
 So I began with basic **namp** scan
 
-### FLAG 5
+## FLAG 5
 
 **FLAG : z3hr0{shouldve_added_some_filter_here}**\
 
@@ -229,7 +234,7 @@ root@kali:~/ctf/zh3r0ctf#
 
 ```
 
-### FLAG 1
+## FLAG 1
 **FLAG: zh3r0{pr05_d0_full_sc4n5}**
 For flag1 i just did a full nmap scan for more information and we got the flag
 
@@ -353,7 +358,7 @@ Nmap done: 1 IP address (1 host up) scanned in 551.86 seconds
 root@kali:~#
 ```
 
-### FLAG 2
+## FLAG 2
 
 **FLAG : zh3r0{You_know_your_shit}**
 
@@ -425,7 +430,7 @@ and i got the flag ..
 root@kali:~# cat .flag
 Flag 2: zh3r0{You_know_your_shit}
 ```
-### FLAG 4
+## FLAG 4
 
 **FLAG : zh3r0{y0ur_s4l4ry_wa5_cr3dit3d}**
  for this I simply switched to next port
@@ -506,9 +511,9 @@ Books are a uniquely portable magic. - Stephen King
 Flag 4: zh3r0{y0ur_s4l4ry_wa5_cr3dit3d}
 ```
 
-## OSINT
+# OSINT
 
-### NASA
+## NASA
 
 **FLAG : zh3r0{y0u_b34t_d4_hax0r}**
 

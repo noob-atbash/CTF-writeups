@@ -6,15 +6,15 @@
 
 </p>
 
-- [linux](./linux/linux)
+## [linux](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/linux/linux.md)
 
-- [crypto](./crypto/crypto)
+## [crypto](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/crypto/crypto.md)
 
-- [forensics](./forensics/for)
+## [forensics](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/forensics/for.md)
 
-- [web](./web/web)
+## [web](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/web/web.md)
 
-- [pwn](./pwn/pwn)
+## [pwn](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/pwn/pwn.md)
 
-- [osint](./osint/osint)
+## [osint](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/osint/osint.md)
 

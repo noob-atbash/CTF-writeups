@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## CASCADING 
 
 A easy peasy ques looking the css file source code as the ques name also suggest I got the flag . 

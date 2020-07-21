@@ -6,7 +6,7 @@
 
 CHALLENGE DESCRIPTION :
 
-![](/img/storm.jpeg)
+![](img/storm.jpeg)
 
 ```
 The original photographer of this picture commented the flag on his post. Find the flag.
@@ -17,7 +17,7 @@ So I basically search the image on Google images. I found a twitter post where t
 
 So I search the photograoher name on Instagram and got the original [photo](https://www.instagram.com/p/B3oKrLQgpko/), and tha flag was in comment section .
 
-![](/img/1.png)
+![](img/1.png)
 
 ### csictf{pl4g14r1sm_1s_b4d}
 
@@ -26,7 +26,7 @@ So I search the photograoher name on Instagram and got the original [photo](http
 
 CHALLENGE DESCRIPTION :
 
-![](/img/Flight.jpg)
+![](img/Flight.jpg)
 ```
 A reporter wanted to know where this flight is headed. Where does he (the reporter) live?
 
@@ -34,7 +34,7 @@ A reporter wanted to know where this flight is headed. Where does he (the report
 
 So the same process I search the image and found that *Alibaba co-founder Jack Ma has sent the first shipment of surgical masks and coronavirus test kits to the US.* So  serached the twitter of JAck Ma and found this :
 
-![](/img/2.png)
+![](img/2.png)
 
 ### csictf{san_francisco}
 
@@ -49,7 +49,7 @@ CHALLENGE DESCRIPTION :
 
 Nothing intresting found from google so I search **Broiestevane** username on Instagram and found is [profile](https://www.instagram.com/broiestevane/) his [bio](https://www.instagram.com/p/B3pJE1CgMvI/)  have a link which have the location of the party.
 
-![](/img/3.png)
+![](img/3.png)
 
 ### csictf{liberty_hotel_boston}
 
@@ -79,6 +79,6 @@ hoshimaseok is up to no good. Track him down.
 ```
 A username searching OSINT problem you can use any online tool to search **hoshimaseok** on all platform I used sherlock and from the results i searches fb,Ig,reddit ... nothing was foung at last lookin on github I got two repositories and one was named **somethingFishy** based on the challenge name  I looked for the commits on **dev** and flag was in one of the [commit](https://github.com/hoshimaseok/SomethingFishy/commit/5e750ab0de940e25b56aa82ff7738c859a8c2b92). 
 
-![](/img/4.png)
+![](img/4.png)
 
 ### csictf{sc4r3d_0f_c0mm1tm3nt}

@@ -1,10 +1,5 @@
 # CSI CTF - 20
 
-<p align="center">
-
-![](./web/img/csi.png)
-
-</p>
 
 ## [linux](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/linux/linux.md)
 

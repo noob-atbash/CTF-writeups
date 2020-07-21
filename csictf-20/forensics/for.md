@@ -2,7 +2,7 @@
 
 ## GRADIENT SKY 
 
-![](/img/sky.jpg)
+![](img/sky.jpg)
 
 The above image was given following the basic commands I got this by binwalk 
 
@@ -25,7 +25,7 @@ As results show it has some RAR content on unraring the content I got the flag
 
 ## ARCHED
 
-![](/img/arched.png)
+![](img/arched.png)
 
 As starting with the classical command to check the file formate and it was a .jpg file
 
@@ -66,8 +66,8 @@ PASSWORD FOUND!!!!: pw == 2611
 
 On extracting the zip file we get two panda images at first I tried a loot of tools but it much easier the flag was in the differnce of the strings of the two images so.
 
-![](/img/pada1.jpg)
-![](/img/pada.jpg)
+![](img/panda1.jpg)
+![](img/panda.jpg)
 
 ```
 root@kali:~/Desktop# strings panda1.jpg > p.txt
@@ -95,5 +95,4 @@ From here it was quite frustrating because you need to guess the flag words howe
 
 ### csictf{kung_fu_panda}
 
-
->Soon updating more
+> More on the way....

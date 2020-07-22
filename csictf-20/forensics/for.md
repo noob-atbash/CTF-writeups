@@ -202,6 +202,6 @@ so i looked closely and saw that so many numbers werent of 8 bytes .
 so i cut down all the numbers from right to 8 bytes
 which gave me this .
 
-[txt file]("https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/forensics/resources%20/unseen.txt")
+[txt file](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/forensics/resources%20/unseen.txt)
 
 ![](img/f.png)

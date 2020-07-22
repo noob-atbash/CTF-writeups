@@ -16,5 +16,5 @@ We actively participate in CTFs. These are security competitions which require p
 
 For a list of upcoming events and more writeups, see [CTFTIME](https://ctftime.org/event/list/upcoming)
 
-For BLOG - [click](https://noob-atbash.github.io/) 
+For BLOG - [click](https://noob-atbash.github.io/blogs/) 
                             

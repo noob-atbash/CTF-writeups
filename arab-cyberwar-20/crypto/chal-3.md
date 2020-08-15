@@ -1,0 +1,152 @@
+---
+layout: default
+---
+
+
+# CHALLENGE-3 (RSA)
+---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+```PY
+n = 2318754427090927622417300593014303163027836982793164162950666250489681094136583599882469330682357229700000166714186122335692872792460409101465630110622887313064657894574037981904943176292533073634387002369380564791579428603519429963490374738649708747360755590037132507998435966068658633431918622092817702780128462915129741083129108481836485937804951555271147615962278158353917059561029043381242474374972583682945918237047674797098894662717409552897418650427548642489575961500481014997803061734956091625431696419759919121068387038071453059311371255995535187052409462363525765654622645413142987775053860188260137197659
+e = 65537
+c = 1852258477078452495280071169336816541669321769289372837198526954361460776833319048556839287633046754304414868057993901219892835088957705515939202089076460374548771033553266251154753679870528816210706553445963568771841753267644973871132621342897934474998162148362874305941012572949171990616677298854465965898581914403406403426504250013897086136105989549801404176555930509653029014518314103310549883855327513190607775750086851774949594618287441246861446444592130784569563671269161854267497652454746479173284327272563799067627736512266913669944284375302659511122504002144054772208775215907860036195680830269422876824977
+
+```
+This values were given by values it is clear to be  RSA problem but not a straight forward . If you tried to get  factor from online sources like [alpetron](https://www.alpertron.com.ar/ECM.HTM) and [factor-db](http://factordb.com/) it was no legit it  not spits the factors So a quick analysis  **e** was not big (so no  wiener second and Boneh Durfee attack) and since no  description was given(not so any specific attack ) 
+For RSA the trapdoor is get the factors so I began with the **Fermat Attack** and yes it was successful !!  
+
+
+So for those who are new to RSA or don't know about Fermat's attack a quick breif explanation for you 
+
+
+In practice **p** and **q** must have the same bit length for a strong RSA key generation but choosing too *close primes* can also completely ruin the security.
+
+In fact if $$p-q < n^{\frac{1}{4}}$$ Fermat’s factoring algorithm can factor n efficiently
+
+Fermat’s factoring algorithm uses the fact that :
+
+$$n = pq = {(\frac{q-p}{2})}^2-{(\frac{p+q}{2})}^2 = x^2 - y^2$$
+
+with :
+
+$$\begin{cases}x =\frac{q-p}{2}\\ &y =\frac{p+q}{2}\end{cases}$$
+
+You can now clearly see that n can be factorized as such:
+
+$$n = (x+y)(x-y)$$
+
+
+Fermat’s algorithm to find one of the factors works as follows :
+
+$$a = \sqrt{n}$$
+
+$$b = a*a-n$$
+
+While b is not a perfect square :
+**increment a (a=a+1)**
+
+$$b = a*a-n$$
+
+$$return\\  = a - \sqrt(b)$$
+
+
+- [@Credits -Bitsdeep](https://bitsdeep.com/posts/attacking-rsa-for-fun-and-ctf-points-part-2/)
+
+---
+
+
+I got the factors using the below script(implementation of fermats's attack ) :
+
+```py
+from sympy.ntheory.primetest import is_square
+from Crypto.Util.number import long_to_bytes,inverse
+import sympy
+def fermat(n):
+    a = int(sympy.sqrt(n)) # Fermat's Algorithm
+    b = (a*a) - n
+    while not is_square(b):
+        a += 1
+        b = (a*a) - n
+    else:
+        p = int(a - (sympy.sqrt(b)))
+        q = n//p
+        if p * q == n:
+            return p,q
+        else:
+            return "No Luck"
+
+n = 
+e =65537
+c = 
+
+phi = (p-1)*(q-1)
+d = inverse(e,phi)
+m = pow(c,d,n)
+print(long_to_bytes(m).decode('ascii'))
+
+
+```
+>Factors
+
+```py
+p=48153446679245376966822046985112099446617981034794594214042780096131516418638366375608599332095159143650219571976756039936351280836582867794175112625874897500464997377986242441540940715154519674822662819026591330454041967249535003603147605312684911517825154805431323771837685531683672611660925609168788996827
+q=48153446679245376966822046985112099446617981034794594214042780096131516418638366375608599332095159143650219571976756039936351280836582867794175112625879990923510369077946617421338536566796348803001717218384229667003185508514134592197193786758239794011461538791978511429725895132475565257089664121103110770817
+
+```
+
+We got the factors successfully but it was not giving flag I got this error
+
+```
+UnicodeDecodeError: 'ascii' codec can't decode byte 0x9b in position 2: ordinal not in range(128)
+```
+
+Even our implemetation was correct why it failed  so I checked evrything once again since and found that φ(n) was not correct because :
+$$φ(n) = (p-1) * (q-1)$$
+> When p,q are prime but the p,q we got are not prime it can be factorized further
+
+So I used [alpetron](https://www.alpertron.com.ar/ECM.HTM) to factorize p & q and got 2 prime number from each of them .
+
+```py
+factors = [ 6939268454184877330211144138413966814481101061382015473621711919814088916348213343387168181954880781520959109737312885406280110070698427014630125251119529,6939268454184877330211144138413966814481101061382015473621711919814088916348213343387168181954880781520959109737312885406280110070698427014630125251118873, 6939268454184877330211144138413966814481101061382015473621711919814088916348213343387168181954880781520959109737312885406280110070698427014630125251119557, 6939268454184877330211144138413966814481101061382015473621711919814088916348213343387168181954880781520959109737312885406280110070698427014630125251118111 ]
+
+```
+A slight change in my code since more factors
+
+```py 
+from sympy.ntheory.primetest import is_square
+from Crypto.Util.number import long_to_bytes,inverse
+import sympy
+from gmpy2 import invert
+from math import prod
+def fermat(n):
+    a = int(sympy.sqrt(n)) # Fermat's Algorithm
+    b = (a*a) - n
+    while not is_square(b):
+        a += 1
+        b = (a*a) - n
+    else:
+        p = int(a - (sympy.sqrt(b)))
+        q = n//p
+        if p * q == n:
+            return p,q
+        else:
+            return "No Luck"
+n = 
+e = 
+c = 
+factors = [ 6939268454184877330211144138413966814481101061382015473621711919814088916348213343387168181954880781520959109737312885406280110070698427014630125251119529,6939268454184877330211144138413966814481101061382015473621711919814088916348213343387168181954880781520959109737312885406280110070698427014630125251118873, 6939268454184877330211144138413966814481101061382015473621711919814088916348213343387168181954880781520959109737312885406280110070698427014630125251119557, 6939268454184877330211144138413966814481101061382015473621711919814088916348213343387168181954880781520959109737312885406280110070698427014630125251118111 ]
+
+phi = prod(i-1 for i in factors) 
+d = invert(e,phi)
+m = pow(c,d,n)
+print(bytes.fromhex(hex(m)[2:]).decode())
+
+
+```
+
+### ASCWG{you_need_fermat_factorization_to_solve_RSA_Small_diffrince_Prime_Attack_12312}
+
+
+

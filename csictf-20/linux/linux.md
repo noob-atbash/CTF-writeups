@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 # LINUX
 
 ## AKA

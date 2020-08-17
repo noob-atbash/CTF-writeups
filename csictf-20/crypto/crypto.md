@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # CRYPTO
 
 ### Rivest Shamir Adleman
@@ -56,10 +60,10 @@ I don't know that what their challenege description means I just focused on ciph
 >>> c.replace("f","")
 '52415851475749485d466e5343576c506d53534058516e425643415e5c4e'
 >>> 
-
+```
 To crosscheck that everything is alright you can use basic XOR properties : 
 
-```
+```py
 flag = bytes.fromhex('52415851475749485d466e5343576c506d53534058516e425643415e5c4e')
 print(xor(flag, 'csictf{'.encode()))
 b"1212312+./\r'%,\x0f#\x040'&#2\x1d+57'%?="

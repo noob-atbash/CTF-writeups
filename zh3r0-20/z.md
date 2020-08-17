@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # FOREINSICS
 
 ## KatyCat
@@ -59,7 +62,7 @@ A **rot47** cipher easy to crack :
 
 When we download the zip file and unzip we found this image :
 
-![](resource/chall.jpg)
+![](img/chall.jpg)
 
 As the challenge description suggest its **jpg** LSB Stego ques so I began with tool [jsteg](https://github.com/lukechampine/jsteg), and at one shot I found the flag :
 
@@ -145,7 +148,7 @@ I took this source from [wikipedia](https://en.wikipedia.org/wiki/Coppersmith%27
 So I took the first three N and ct which I got from the connection and put that on my script :
 
 
-```py
+```python
 #!/usr/bin/env python
 
 e=5
@@ -238,7 +241,7 @@ root@kali:~/ctf/zh3r0ctf#
 **FLAG: zh3r0{pr05_d0_full_sc4n5}**
 For flag1 i just did a full nmap scan for more information and we got the flag
 
-```
+```bash
 root@kali:~# nmap -p- -sV -A -sT hackit.zh3r0.ml
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-17 21:21 IST
 Failed to resolve "hackit.zh3r0.ml".

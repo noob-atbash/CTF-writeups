@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 # PWN
 
 ## pwn-intended-0x1

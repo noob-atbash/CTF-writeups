@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## REVERSING
 ### SOLVED IN A FLASH
 

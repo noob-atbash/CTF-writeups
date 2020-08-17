@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## CASCADING 
 
 A easy peasy ques looking the css file source code as the ques name also suggest I got the flag . 
@@ -35,4 +39,4 @@ I got this on moving to /fade/to/black I got the flag
 #### csictf{br0b0t_1s_pr3tty_c00l_1_th1nk}
 
 
->Soon updating more ....
+> More writeups on the way ....

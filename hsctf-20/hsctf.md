@@ -1,3 +1,10 @@
+---
+layout: default
+---
+
+
+# HSCTF-20
+
 ## WEB EXPLOITATION
 
 ### INSPECTOR GADGET
@@ -317,7 +324,7 @@ for k in range(26):
 print(flag)
 
 ```
-![](/img/primes_1.png)
+![](img/primes_1.png)
 
 
 ## REVERSE ENGINEERING
@@ -394,7 +401,7 @@ public class ComputerSciencePrinciples
     }
 }
 ```
-![](/img/rev1_1.png)
+![](img/rev1_1.png)
 
 ### AP Lab: English Language
 
@@ -442,7 +449,7 @@ public class EnglishLanguage
 ```
 We just have to reverse the code to get the flag
 
->: FLAG : flag{n0t_t00_b4d_r1ght}
+**flag{n0t_t00_b4d_r1ght}**
 
 ```java
 import java.util.Scanner;
@@ -481,57 +488,5 @@ public class EnglishLanguage
 }
 ```
 
-![](/img/rev2_1.png)
+![](img/rev2_1.png)
 
-## ALGORITHMS
-
-###Pythagorean Tree Fractal 1
-
-![](/img/algo1_1.png)
-
-**flag{1125899906842623}**
-
-```python
-#!/usr/bin/env python3
-# -- coding: utf-8 --
-
-val = 0
-
-for i in range(0,50):
-    val = 2*val + 1
-print("flag{%d}"%val)
-
-```
-![](/img/algo1_2.png)
-
-**QUESTION : Pythagorean Tree Fractal 2
-
-![](/img/algo2_1.png)
-
-**flag{1759218604441600}**
-
-Now, the area is:
-
-```
-(area/1)*1 + (area/2)*2 + ... upto 25 terms
-basically it is area = 70368744177664 multiplied by 25
-
-```
-```python
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-
-area = 70368744177664
-
-total_area = 0
-
-for i in range(1,26):
-    total_area += (area/i)*i
-
-print("flag{%d}"%total_area)
-
-print("flag{%d}"%(70368744177664*25))
-
-```
-![](/img/algo2_2.png)

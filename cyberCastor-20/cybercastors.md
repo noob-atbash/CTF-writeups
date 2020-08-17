@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 ### README
 
 It was an easy peasy as the name suggest something on the readme page but flag was not directly displayed just inspecting the source code will give you the flag.
@@ -92,7 +94,9 @@ castorCTF{1stiswhatyowant}
 
 **QUESTION**
 
-```
+- [source](https://github.com/noob-atbash/CTF-writeups/blob/master/cyberCastor-20/resources/arithmetic.py)
+
+```py
 def checkpass():
     _input = input("Enter the password: ").encode()
     if _input[0:4].hex() == "63617374":
@@ -123,7 +127,7 @@ main()
 
 It can be easily seen that the flag is the password.just we have to convert the given hex data to ASCII which can be easily done by a python script.
 
-```
+```py
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -136,7 +140,7 @@ check()
 
 ```
 
-```
+```bash
 root@kali:~# ./vault0.py
 castorsCTF{r1xTy_m1nut3s_gt_s1xty_m1nut3s}
 root@kali:~# python3 chal.py
@@ -148,7 +152,7 @@ Yeah...okay. You got it!
 
 **QUESTION**
 
-```
+```py
 import base64
 
 def xor(s1,s2):
@@ -182,7 +186,7 @@ here also the password is the flag the password and the key are undergoing xor o
 
 Now,
 
-```
+```py
 a = x ^ y
 x = a ^ y
 or ,
@@ -190,7 +194,7 @@ y = x ^ a
 ```
 so the reverse of the xor function is so much easy
 
-```
+```py
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -251,7 +255,7 @@ Wrong answer! The correct answer was -5
 
 **FLAG** : castorsCTF(n00b_pyth0n_4r17hm3t1c5}
 
-```
+```py
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 

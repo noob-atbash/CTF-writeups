@@ -1,20 +1,23 @@
-# CTF-writeups
+# INDEX
+---
 
-We actively participate in CTFs. These are security competitions which require practical knowledge of topics like binary exploitation, reverse engineering, cryptography, web security,forensics, steganography, etc. We also try to learn many new things in the field of information security and open source and try share our knowledge with everyone.
-
-
-
-## Team :  NOOB-ATBASH
+Writeups for recent ctfs,  check out [upcoming CTF's](https://ctftime.org/event/list/upcoming).
 
 
-| ![](./noobctf-20/img/error.jpg) | ![](./noobctf-20/img/kaki1.jpg) |
-| ------------- | ------------- |
-|   [ЕЯЯОЯ](https://github.com/Error-200)       |  [kaki-epithesi](https://github.com/kaki-epithesi)|
+## >> [Arab Security Cyber Wargames 2020 Qualifications](./cyberwar/README)
+
+## >> [csictf-20](./csictf-20/README)
+
+## >> [zh3r0-20](./zh3r0-20/z)
+
+## >> [cyberCastor-20](./cyberCastor-20/cybercastors)
+
+## >> [nahamcon-20](./nahamcon-20/README)
+
+## >> [noob-20](./noobctf-20/noob)
+
+## >>  [ractf-20](./ractf-20/ractf)
+
+## >> [hsctf-20](./hsctf-20/hsctf)
 
 
-### LINKS 
-
-For a list of upcoming events and more writeups, see [CTFTIME](https://ctftime.org/event/list/upcoming)
-
-For BLOG - [click](https://noob-atbash.github.io/blogs/) 
-                            

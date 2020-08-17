@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # WARMUP
 
 Almost all the question in the warmup section were easy so I am writing only the solution for two ques which I found unique and fun to solve:

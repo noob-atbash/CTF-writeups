@@ -1,15 +1,18 @@
-# CSI CTF - 20
+---
+layout: default
+---
 
+# CSICTF-20 
 
-## [linux](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/linux/linux.md)
+- [linux](./linux/linux)
 
-## [crypto](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/crypto/crypto.md)
+- [crypto](./crypto/crypto)
 
-## [forensics](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/forensics/for.md)
+- [forensics](./forensics/for)
 
-## [web](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/web/web.md)
+- [web](./web/web)
 
-## [pwn](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/pwn/pwn.md)
+- [pwn](./pwn/pwn)
 
-## [osint](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/osint/osint.md)
+- [osint](./osint/osint)
 

@@ -1,0 +1,7 @@
+theme: jekyll-theme-hacker
+title: CTF Writeups 
+description: We wish to provide good and detailed writeups for all challenges which we solve.Feel free to suggest some changes . Star to show your love!
+google_analytics: "UA-165331524-1"
+markdown: kramdown
+
+  

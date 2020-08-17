@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # FORENSIC
 
 ## GRADIENT SKY 
@@ -94,6 +97,7 @@ root@kali:~/Desktop# diff p.txt q.txt
 From here it was quite frustrating because you need to guess the flag words however I cracked it.
 
 ### csictf{kung_fu_panda}
+
 
 ## UNSEEN
 
@@ -205,3 +209,5 @@ which gave me this .
 [txt file](https://github.com/noob-atbash/CTF-writeups/blob/master/csictf-20/forensics/resources%20/unseen.txt)
 
 ![](img/f.png)
+
+

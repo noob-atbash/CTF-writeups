@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## CRYPTO
 
 ### BaseD

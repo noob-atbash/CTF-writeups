@@ -20,4 +20,6 @@ Writeups for recent ctfs,  check out [upcoming CTF's](https://ctftime.org/event/
 
 ## >> [hsctf-20](./hsctf-20/hsctf)
 
+{% include disqus.html %}
+
 

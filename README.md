@@ -4,7 +4,7 @@
 Writeups for recent ctfs,  check out [upcoming CTF's](https://ctftime.org/event/list/upcoming).
 
 
-## >> [Arab Security Cyber Wargames 2020 Qualifications](./cyberwar/README)
+## >> [ASCW-20](./cyberwar/README)
 
 ## >> [csictf-20](./csictf-20/README)
 

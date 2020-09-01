@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## MEMORY 1
 
 **Flag is : FwordCTF{computername_user_password}**

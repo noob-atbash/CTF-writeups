@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## BG & BD !
 
 **Best Gift and Best Day !**

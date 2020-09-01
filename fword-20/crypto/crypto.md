@@ -14,4 +14,3 @@ layout: default
 
 
 
-{% include disqus.html %}

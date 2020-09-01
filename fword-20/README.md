@@ -3,6 +3,9 @@
 
 - [crypto](./crypto/crypto)
 
-- [forensics](./forensics/for) 
+- [forensics](./forensic/for) 
 
 - soon adding more
+
+
+

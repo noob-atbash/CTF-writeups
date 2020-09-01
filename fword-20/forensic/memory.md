@@ -129,3 +129,6 @@ $ volatility -f foren.raw  --profile=Win7SP0x64  pslist
 $ volatility -f foren.raw  --profile=Win7SP0x64  memdump -p 1044 --dump-dir=dirname
 
 ```
+
+
+{% include disqus.html %}

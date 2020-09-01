@@ -9,6 +9,3 @@ layout: default
 - [CHALLENGE-3](./crypto/chal-3)
 
 - [CHALLENGE-5](./crypto/chal-5)
-
-
-- soon adding more writeups

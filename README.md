@@ -3,6 +3,7 @@
 
 Writeups for recent ctfs,  check out [upcoming CTF's](https://ctftime.org/event/list/upcoming).
 
+## >> [FWORD-20](./fword-20/README)
 
 ## >> [ASCW-20](./cyberwar/README)
 
